@@ -90,12 +90,19 @@ app.add_middleware(
 @app.middleware("http")
 async def handle_vercel_paths(request: Request, call_next):
     """Normalize paths if forwarded by Vercel serverless rewrites."""
-    path = request.scope.get("path", "")
-    for prefix in ("/api/index.py", "/api/index"):
-        if path.startswith(prefix):
-            rem = path[len(prefix):]
-            request.scope["path"] = rem if rem else "/"
-            break
+    matched_path = request.headers.get("x-matched-path") or request.headers.get("x-invoke-path")
+    if matched_path:
+        matched_path = matched_path.split("?")[0]
+        if matched_path in ("/api/index.py", "/api/index"):
+            matched_path = "/"
+        request.scope["path"] = matched_path
+    else:
+        path = request.scope.get("path", "")
+        for prefix in ("/api/index.py", "/api/index"):
+            if path.startswith(prefix):
+                rem = path[len(prefix):]
+                request.scope["path"] = rem if rem else "/"
+                break
     return await call_next(request)
 
 # Mount export downloads
