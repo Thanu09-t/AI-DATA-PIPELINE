@@ -131,7 +131,10 @@ class Settings(BaseSettings):
 
     def ensure_dirs(self) -> None:
         for d in [self.raw_dir, self.processed_dir, self.exports_dir, self.logs_dir, self.chroma_dir]:
-            d.mkdir(parents=True, exist_ok=True)
+            try:
+                d.mkdir(parents=True, exist_ok=True)
+            except OSError:
+                pass
 
     @field_validator("log_level")
     @classmethod

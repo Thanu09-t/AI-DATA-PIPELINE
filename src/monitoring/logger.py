@@ -75,10 +75,13 @@ def get_logger(name: str, log_dir: Optional[Path] = None, level: str = "INFO") -
     # File handler (JSON)
     if log_dir is None:
         log_dir = Path("data/logs")
-    log_dir.mkdir(parents=True, exist_ok=True)
-    fh = logging.FileHandler(log_dir / f"{name.replace('.', '_')}.log", encoding="utf-8")
-    fh.setFormatter(JSONFormatter())
-    logger.addHandler(fh)
+    try:
+        log_dir.mkdir(parents=True, exist_ok=True)
+        fh = logging.FileHandler(log_dir / f"{name.replace('.', '_')}.log", encoding="utf-8")
+        fh.setFormatter(JSONFormatter())
+        logger.addHandler(fh)
+    except OSError:
+        pass
 
     return logger
 

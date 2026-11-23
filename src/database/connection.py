@@ -39,8 +39,9 @@ def _get_engine_kwargs(url: Optional[str] = None) -> dict:
 def create_engine() -> AsyncEngine:
     url = settings.database_url
     if os.environ.get("USE_SQLITE_FALLBACK", "1") == "1" or "sqlite" in url:
-        url = "sqlite+aiosqlite:///data/ai_intelligence.db"
-        logger.warning("Using SQLite fallback database")
+        db_file = (settings.data_dir / "ai_intelligence.db").resolve()
+        url = f"sqlite+aiosqlite:///{db_file.as_posix()}"
+        logger.warning(f"Using SQLite database at {db_file}")
     return create_async_engine(url, echo=False, **_get_engine_kwargs(url))
 
 
