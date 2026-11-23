@@ -1,0 +1,70 @@
+# Environment and Secrets
+.env
+.env.*
+!.env.example
+*.env.local
+*.key
+*.pem
+credentials/
+*credential*.json
+*service_account*.json
+*secret*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Data caches and raw checkpoints
+data/raw/
+data/processed/
+data/chroma/
+
+# Logs
+data/logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Alembic
+src/database/migrations/__pycache__/

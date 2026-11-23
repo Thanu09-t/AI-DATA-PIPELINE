@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Intelligence Platform - Autonomous Artificial Intelligence Market &amp; Research Index</title>
+    <meta name="description" content="A calm, searchable registry aggregating AI products, arXiv papers, startups, technical career positions, and industry news from verified public sources.">
+    <link rel="canonical" href="http://localhost:8000/">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/static/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+    <link rel="manifest" href="/static/site.webmanifest">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AI Intelligence Platform - Autonomous AI Index">
+    <meta property="og:description" content="Public intelligence index aggregating AI products, research literature, organizations, talent positions, and news.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:8000/">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <style>
+        .landing-nav {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--rose-gold-hairline);
+        }
+        .landing-nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .landing-nav-links a {
+            color: var(--dusty-mauve);
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            transition: color 0.12s ease;
+        }
+        .landing-nav-links a:hover {
+            color: var(--cream);
+        }
+        .landing-hero {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 6rem 2rem 5rem;
+            position: relative;
+        }
+        .landing-hero-kicker {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--rose-gold);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        .landing-headline {
+            font-family: var(--font-serif);
+            font-size: 3.4rem;
+            font-weight: 300;
+            line-height: 1.15;
+            color: var(--cream);
+            letter-spacing: -0.01em;
+            margin-bottom: 1.75rem;
+        }
+        @media (max-width: 768px) {
+            .landing-headline {
+                font-size: 2.2rem;
+            }
+        }
+        .landing-subhead {
+            color: var(--dusty-mauve);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            max-width: 780px;
+            margin-bottom: 2.5rem;
+        }
+        .landing-hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .landing-stat-strip {
+            border-top: 1px solid var(--rose-gold-hairline);
+            border-bottom: 1px solid var(--rose-gold-hairline);
+            background: var(--burgundy-surface);
+            margin: 3rem 0;
+        }
+        .landing-stat-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+        @media (max-width: 1100px) {
+            .landing-stat-inner {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .landing-stat-inner {
+                grid-template-columns: 1fr;
+            }
+        }
+        .landing-stat-cell {
+            padding: 2rem 1.5rem;
+            border-right: 1px solid var(--rose-gold-hairline);
+            border-bottom: 1px solid var(--rose-gold-hairline);
+            display: flex;
+            flex-direction: column;
+        }
+        .landing-stat-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--dusty-mauve);
+            font-weight: 500;
+            margin-bottom: 0.35rem;
+        }
+        .landing-stat-num {
+            font-family: var(--font-serif);
+            font-size: 2.6rem;
+            font-weight: 300;
+            color: var(--cream);
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
+            margin-bottom: 0.35rem;
+        }
+        .landing-stat-caption {
+            font-size: 11px;
+            color: var(--dusty-mauve);
+        }
+        .editorial-band {
+            padding: 4.5rem 2rem;
+            border-bottom: 1px solid var(--rose-gold-hairline);
+        }
+        .editorial-band.band-wine {
+            background-color: var(--wine-black);
+            color: var(--cream);
+        }
+        .editorial-band.band-burgundy {
+            background-color: var(--burgundy-surface);
+            color: var(--cream);
+        }
+        .editorial-band.band-blush {
+            background-color: var(--blush);
+            color: var(--wine-black);
+        }
+        .editorial-band.band-blush .section-title {
+            color: var(--wine-black);
+        }
+        .editorial-band.band-blush p {
+            color: #34121B;
+        }
+        .editorial-band-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 1.25;
+            margin-bottom: 1rem;
+        }
+        .source-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .source-card {
+            border: 1px solid var(--rose-gold-hairline);
+            padding: 1.5rem;
+            background: transparent;
+        }
+        .source-card-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            font-weight: 600;
+            color: var(--cream);
+            margin-bottom: 0.5rem;
+        }
+        .source-card-desc {
+            font-size: 12.5px;
+            color: var(--dusty-mauve);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="landing-nav">
+        <a href="/" class="brand-wrapper">
+            <span class="brand-wordmark">AI Intelligence</span>
+        </a>
+        <div class="landing-nav-links">
+            <a href="/dashboard">Dashboard</a>
+            <a href="/docs" target="_blank">API Docs</a>
+            <a href="/downloads/architecture.pdf" target="_blank">Architecture</a>
+            <a href="/dashboard" class="btn-primary-custom" style="padding: 0.4rem 0.9rem;">
+                Open Dashboard →
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="landing-hero">
+        <div class="landing-hero-kicker">Autonomous Intelligence Ingestion Platform</div>
+        <h1 class="landing-headline">
+            An autonomous intelligence index across the global artificial intelligence landscape.
+        </h1>
+        <p class="landing-subhead">
+            Continuously discovering, extracting, and indexing verified models from Hugging Face, academic literature from arXiv, engineering organizations from GitHub, active technical positions from Greenhouse, Ashby, and Lever, and coverage from syndicated technology publishers into one searchable registry.
+        </p>
+        <div class="landing-hero-actions">
+            <a href="/dashboard" class="btn-primary-custom">
+                Launch Intelligence Dashboard →
+            </a>
+            <a href="/docs" target="_blank" class="btn-secondary-custom">
+                View REST API Documentation
+            </a>
+            <a href="/downloads/architecture.pdf" target="_blank" class="btn-secondary-custom">
+                Download Architecture Specification
+            </a>
+        </div>
+    </header>
+
+    <!-- Live Metrics Strip (Separated by vertical hairlines) -->
+    <section class="landing-stat-strip">
+        <div class="landing-stat-inner">
+            <div class="landing-stat-cell">
+                <span class="landing-stat-label">AI Products</span>
+                <span class="landing-stat-num" id="stat-products">1,313</span>
+                <span class="landing-stat-caption">Hugging Face models and Spaces</span>
+            </div>
+            <div class="landing-stat-cell">
+                <span class="landing-stat-label">Research Papers</span>
+                <span class="landing-stat-num" id="stat-research">1,229</span>
+                <span class="landing-stat-caption">arXiv CS classifications</span>
+            </div>
+            <div class="landing-stat-cell">
+                <span class="landing-stat-label">AI Organizations</span>
+                <span class="landing-stat-num" id="stat-startups">658</span>
+                <span class="landing-stat-caption">Hugging Face and GitHub orgs</span>
+            </div>
+            <div class="landing-stat-cell">
+                <span class="landing-stat-label">AI Positions</span>
+                <span class="landing-stat-num" id="stat-jobs">1,776</span>
+                <span class="landing-stat-caption">Greenhouse, Ashby, and Lever ATS</span>
+            </div>
+            <div class="landing-stat-cell">
+                <span class="landing-stat-label">AI News Articles</span>
+                <span class="landing-stat-num" id="stat-news">50</span>
+                <span class="landing-stat-caption">Syndicated technology publications</span>
+            </div>
+            <div class="landing-stat-cell">
+                <span class="landing-stat-label">Canonical Entities</span>
+                <span class="landing-stat-num" id="stat-mappings">1,121</span>
+                <span class="landing-stat-caption">Resolved multi-source knowledge graph</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial Band 1: Multi-Source Architecture -->
+    <section class="editorial-band band-burgundy">
+        <div class="editorial-band-inner">
+            <h2 class="section-title">Verified Public Source Attribution</h2>
+            <p style="color: var(--dusty-mauve); max-width: 680px; line-height: 1.6;">
+                Every record in our catalog maintains direct provenance. We index publicly accessible data streams without inventing metrics or synthetic claims.
+            </p>
+            <div class="source-grid">
+                <div class="source-card">
+                    <div class="source-card-title">Hugging Face Catalog</div>
+                    <div class="source-card-desc">Models and community spaces indexed across text generation, computer vision, audio, and multi-modal tasks.</div>
+                </div>
+                <div class="source-card">
+                    <div class="source-card-title">arXiv Computer Science</div>
+                    <div class="source-card-desc">Preprint literature covering cs.AI, cs.LG, cs.CL, cs.CV, and cs.RO enriched with linked GitHub repository stars.</div>
+                </div>
+                <div class="source-card">
+                    <div class="source-card-title">Applicant Tracking Systems</div>
+                    <div class="source-card-desc">Direct corporate career feeds from Greenhouse, Ashby, and Lever categorized by role family and publication window.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial Band 2: Blush Contrast Section -->
+    <section class="editorial-band band-blush">
+        <div class="editorial-band-inner">
+            <h2 class="section-title">Enterprise Knowledge Graph &amp; Canonicalization</h2>
+            <p style="max-width: 680px; line-height: 1.7;">
+                Disparate naming conventions across code repositories, academic preprints, and hiring portals are resolved into single canonical entities through deterministic rules and token-set similarity matching.
+            </p>
+            <div class="mt-4">
+                <a href="/dashboard" class="btn-primary-custom" style="background: var(--wine-black); color: var(--cream); border-color: var(--wine-black);">
+                    Explore Canonical Knowledge Graph →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Persistent Editorial Footer -->
+    <footer class="app-footer">
+        <div class="footer-links">
+            <a href="/dashboard">Dashboard</a>
+            <span class="sep">•</span>
+            <a href="/privacy">Privacy Policy</a>
+            <span class="sep">•</span>
+            <a href="/terms">Terms of Service</a>
+            <span class="sep">•</span>
+            <a href="/docs" target="_blank">API Documentation</a>
+            <span class="sep">•</span>
+            <a href="/downloads/architecture.pdf" target="_blank">Architecture PDF</a>
+        </div>
+        <div class="footer-copy">
+            [YOUR LEGAL NAME]. FrontierAtlas AI Intelligence Platform. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Fetch live database counts to populate the landing metrics strip
+        fetch("/api/overview")
+            .then(res => res.json())
+            .then(data => {
+                if (data && data.metrics) {
+                    const m = data.metrics;
+                    if (document.getElementById("stat-products")) document.getElementById("stat-products").textContent = Number(m.products).toLocaleString();
+                    if (document.getElementById("stat-research")) document.getElementById("stat-research").textContent = Number(m.research).toLocaleString();
+                    if (document.getElementById("stat-startups")) document.getElementById("stat-startups").textContent = Number(m.startups).toLocaleString();
+                    if (document.getElementById("stat-jobs")) document.getElementById("stat-jobs").textContent = Number(m.jobs).toLocaleString();
+                    if (document.getElementById("stat-news")) document.getElementById("stat-news").textContent = Number(m.news).toLocaleString();
+                    if (document.getElementById("stat-mappings")) document.getElementById("stat-mappings").textContent = Number(m.mappings).toLocaleString();
+                }
+            })
+            .catch(err => console.warn("Live count fetch:", err));
+    </script>
+</body>
+</html>

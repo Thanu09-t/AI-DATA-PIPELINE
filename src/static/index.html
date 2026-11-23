@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Intelligence Platform - Real-Time AI Products, Research, Startups, Jobs, and News</title>
+    <meta name="description" content="Aggregated intelligence platform tracking AI products, research papers, startups, jobs, and news with verified source attribution.">
+    <link rel="canonical" href="http://localhost:8000/">
+
+    <!-- Favicons and Web App Manifest -->
+    <link rel="icon" href="/static/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+    <link rel="manifest" href="/static/site.webmanifest">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="AI Intelligence Platform - Real-Time AI Products, Research, Startups, Jobs, and News">
+    <meta property="og:description" content="Aggregated intelligence platform tracking AI products, research papers, startups, jobs, and news with verified source attribution.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:8000/">
+    
+    <!-- Bootstrap Grid & Utilities -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom Editorial Stylesheet -->
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- ─────────────────────────────────────────────────────────────────────
+             SIDEBAR NAVIGATION
+             ───────────────────────────────────────────────────────────────────── -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="brand-wrapper" onclick="switchView('overview'); return false;">
+                    <span class="brand-wordmark">AI Intelligence</span>
+                    <span class="brand-monogram">AI</span>
+                </a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section-title">Core Intelligence</div>
+                <a class="nav-item active" data-view="overview">
+                    <i data-lucide="layout-dashboard" class="nav-icon"></i>
+                    <span>Overview</span>
+                </a>
+                <a class="nav-item" data-view="products">
+                    <i data-lucide="box" class="nav-icon"></i>
+                    <span>AI Products</span>
+                    <span class="nav-badge" id="badge-products">-</span>
+                </a>
+                <a class="nav-item" data-view="research">
+                    <i data-lucide="graduation-cap" class="nav-icon"></i>
+                    <span>Research Papers</span>
+                    <span class="nav-badge" id="badge-research">-</span>
+                </a>
+                <a class="nav-item" data-view="startups">
+                    <i data-lucide="building-2" class="nav-icon"></i>
+                    <span>AI Startups</span>
+                    <span class="nav-badge" id="badge-startups">-</span>
+                </a>
+                <a class="nav-item" data-view="jobs">
+                    <i data-lucide="briefcase" class="nav-icon"></i>
+                    <span>AI Jobs</span>
+                    <span class="nav-badge" id="badge-jobs">-</span>
+                </a>
+                <a class="nav-item" data-view="news">
+                    <i data-lucide="newspaper" class="nav-icon"></i>
+                    <span>AI News</span>
+                    <span class="nav-badge" id="badge-news">-</span>
+                </a>
+
+                <div class="nav-section-title">Knowledge Graph</div>
+                <a class="nav-item" data-view="mappings">
+                    <i data-lucide="network" class="nav-icon"></i>
+                    <span>Entity Mappings</span>
+                    <span class="nav-badge" id="badge-mappings">-</span>
+                </a>
+                <a class="nav-item" data-view="exports">
+                    <i data-lucide="download-cloud" class="nav-icon"></i>
+                    <span>Data Exports</span>
+                </a>
+
+                <div class="nav-section-title">Infrastructure</div>
+                <a class="nav-item" data-view="ingestion">
+                    <i data-lucide="play-circle" class="nav-icon"></i>
+                    <span>Ingestion Control</span>
+                </a>
+                <a class="nav-item" data-view="health">
+                    <i data-lucide="activity" class="nav-icon"></i>
+                    <span>System Health</span>
+                </a>
+                <a href="/docs" target="_blank" class="nav-item">
+                    <i data-lucide="book-open" class="nav-icon"></i>
+                    <span>API Docs (Swagger)</span>
+                    <i data-lucide="arrow-up-right" style="width: 14px; margin-left: auto;"></i>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="sidebar-collapse-btn" id="sidebar-toggle" title="Toggle Sidebar">
+                    <i data-lucide="panel-left-close"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- ─────────────────────────────────────────────────────────────────────
+             MAIN WRAPPER
+             ───────────────────────────────────────────────────────────────────── -->
+        <div class="main-wrapper">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="breadcrumb-area">
+                    <span class="crumb-main">Index</span>
+                    <span class="crumb-sep">/</span>
+                    <span class="crumb-current" id="breadcrumb-current">Overview</span>
+                </div>
+
+                <div class="header-actions">
+                    <!-- Global Search Button (Ctrl + K) -->
+                    <button class="global-search-trigger" id="global-search-btn">
+                        <i data-lucide="search" style="width: 13px;"></i>
+                        <span>Search index...</span>
+                        <span class="search-kbd">Ctrl K</span>
+                    </button>
+
+                    <!-- Active Pipeline Running Pill -->
+                    <span id="pipeline-running-pill" class="badge" style="display: none;">
+                        Running
+                    </span>
+
+                    <!-- System Status Live Badge -->
+                    <div class="system-status-badge" id="system-status-indicator">
+                        <span class="status-dot"></span>
+                        <span>System Live</span>
+                    </div>
+
+                    <!-- Primary Ingestion Button -->
+                    <button class="btn-primary-custom" onclick="switchView('ingestion')">
+                        <span>Run Ingestion →</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Page Container with View Sections -->
+            <main class="page-container">
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     VIEW 1: EDITORIAL OVERVIEW
+                     ═══════════════════════════════════════════════════════════════ -->
+                <section class="view-section active" id="view-overview">
+                    <div class="overview-editorial-header">
+                        <h1 class="overview-editorial-title">Intelligence Overview</h1>
+                        <p class="overview-editorial-desc">
+                            Autonomous multi-source intelligence index tracking verified models, research literature, organizations, talent opportunities, and market coverage.
+                        </p>
+                    </div>
+
+                    <!-- Six Stats Strip Grid -->
+                    <div class="kpi-grid">
+                        <div class="kpi-card" onclick="switchView('products')">
+                            <div class="kpi-header">
+                                <span class="kpi-label">AI Products</span>
+                            </div>
+                            <div class="kpi-value" id="kpi-products">-</div>
+                            <div class="kpi-subtext">Hugging Face models and Spaces</div>
+                        </div>
+
+                        <div class="kpi-card" onclick="switchView('research')">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Research Papers</span>
+                            </div>
+                            <div class="kpi-value" id="kpi-research">-</div>
+                            <div class="kpi-subtext" id="kpi-research-sub">arXiv CS classifications</div>
+                        </div>
+
+                        <div class="kpi-card" onclick="switchView('startups')">
+                            <div class="kpi-header">
+                                <span class="kpi-label">AI Startups</span>
+                            </div>
+                            <div class="kpi-value" id="kpi-startups">-</div>
+                            <div class="kpi-subtext">Hugging Face and GitHub orgs</div>
+                        </div>
+
+                        <div class="kpi-card" onclick="switchView('jobs')">
+                            <div class="kpi-header">
+                                <span class="kpi-label">AI Positions</span>
+                            </div>
+                            <div class="kpi-value" id="kpi-jobs">-</div>
+                            <div class="kpi-subtext" id="kpi-jobs-sub">Greenhouse, Ashby, and Lever ATS</div>
+                        </div>
+
+                        <div class="kpi-card" onclick="switchView('news')">
+                            <div class="kpi-header">
+                                <span class="kpi-label">AI News</span>
+                            </div>
+                            <div class="kpi-value" id="kpi-news">-</div>
+                            <div class="kpi-subtext" id="kpi-news-sub">Syndicated technology publications</div>
+                        </div>
+
+                        <div class="kpi-card" onclick="switchView('mappings')">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Canonical Entities</span>
+                            </div>
+                            <div class="kpi-value" id="kpi-mappings">-</div>
+                            <div class="kpi-subtext">Resolved multi-source knowledge graph</div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics Charts Grid -->
+                    <div class="analytics-grid">
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <div class="chart-title">Product Pricing Distribution</div>
+                                <span class="chart-source-tag">Hugging Face Models</span>
+                            </div>
+                            <div class="chart-canvas-wrap">
+                                <canvas id="chart-pricing"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <div class="chart-title">AI Jobs by Role Family</div>
+                                <span class="chart-source-tag">ATS Career Boards</span>
+                            </div>
+                            <div class="chart-canvas-wrap">
+                                <canvas id="chart-roles"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <div class="chart-title">arXiv Research Category Breakdown</div>
+                                <span class="chart-source-tag">arXiv CS Classifications</span>
+                            </div>
+                            <div class="chart-canvas-wrap">
+                                <canvas id="chart-categories"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <div class="chart-title">Entity Canonicalization Methods</div>
+                                <span class="chart-source-tag">Audit Trail Log</span>
+                            </div>
+                            <div class="chart-canvas-wrap">
+                                <canvas id="chart-methods"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Intelligence Stream -->
+                    <div class="table-panel">
+                        <div class="table-controls">
+                            <div class="fw-semibold text-main d-flex align-items-center gap-2">
+                                <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em;">Recent Intelligence Ingestion Stream</span>
+                            </div>
+                            <span class="chart-source-tag">Live stream across models, literature, organizations, talent, and news</span>
+                        </div>
+                        <div class="table-container">
+                            <table class="enterprise-table">
+                                <thead>
+                                    <tr>
+                                        <th>Domain</th>
+                                        <th>Title / Entity</th>
+                                        <th>Source / Organization</th>
+                                        <th>Timestamp</th>
+                                        <th>Classification</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="recent-activity-tbody">
+                                    <!-- Dynamic rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     VIEW 2: AI PRODUCTS EXPLORER
+                     ═══════════════════════════════════════════════════════════════ -->
+                <section class="view-section" id="view-products">
+                    <div class="table-panel">
+                        <div class="table-controls">
+                            <div class="table-filter-group">
+                                <div class="search-input-wrap">
+                                    <i data-lucide="search" class="search-icon"></i>
+                                    <input type="text" placeholder="Search products, companies, models..." oninput="handleSearch('products', this.value)">
+                                </div>
+                                <select class="filter-select" onchange="handleFilter('products', 'pricing', this.value)">
+                                    <option value="all">All Pricing Models</option>
+                                    <option value="FREE">Free</option>
+                                    <option value="PAID">Paid</option>
+                                    <option value="Not listed">Not listed</option>
+                                </select>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <button class="btn-secondary-custom" onclick="loadCategoryData('products')">
+                                    <i data-lucide="rotate-ccw" style="width:14px;"></i> Refresh
+                                </button>
+                                <a href="/downloads/products.csv" download class="btn-primary-custom">
+                                    <i data-lucide="download" style="width:14px;"></i> Export CSV
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="enterprise-table">
+                                <thead>
+                                    <tr>
+                                        <th onclick="handleSort('products', 'name')">Product Name <i data-lucide="chevrons-up-down" style="width:12px;"></i></th>
+                                        <th onclick="handleSort('products', 'company')">Company / Creator</th>
+                                        <th onclick="handleSort('products', 'pricing')">Pricing Model</th>
+                                        <th>Source</th>
+                                        <th onclick="handleSort('products', 'date')">Collected</th>
+                                        <th>Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="products-tbody"></tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-footer">
+                            <span id="products-page-info">Showing records...</span>
+                            <div class="pagination-controls">
+                                <button class="page-btn" id="products-prev" onclick="changePage('products', -1)"><i data-lucide="chevron-left" style="width:14px;"></i></button>
+                                <button class="page-btn" id="products-next" onclick="changePage('products', 1)"><i data-lucide="chevron-right" style="width:14px;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     VIEW 3: RESEARCH PAPERS EXPLORER
+                     ═══════════════════════════════════════════════════════════════ -->
+                <section class="view-section" id="view-research">
+                    <div class="table-panel">
+                        <div class="table-controls">
+                            <div class="table-filter-group">
+                                <div class="search-input-wrap">
+                                    <i data-lucide="search" class="search-icon"></i>
+                                    <input type="text" placeholder="Search research title, authors..." oninput="handleSearch('research', this.value)">
+                                </div>
+                                <label class="d-flex align-items-center gap-2 text-sub small ms-2" style="cursor: pointer;">
+                                    <input type="checkbox" onchange="handleFilter('research', 'hasGithub', this.checked)"> Only With GitHub Code
+                                </label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <button class="btn-secondary-custom" onclick="loadCategoryData('research')">
+                                    <i data-lucide="rotate-ccw" style="width:14px;"></i> Refresh
+                                </button>
+                                <a href="/downloads/research_papers.csv" download class="btn-primary-custom">
+                                    <i data-lucide="download" style="width:14px;"></i> Export CSV
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="enterprise-table">
+                                <thead>
+                                    <tr>
+                                        <th onclick="handleSort('research', 'title')">Paper Title <i data-lucide="chevrons-up-down" style="width:12px;"></i></th>
+                                        <th>Authors</th>
+                                        <th>GitHub Repository</th>
+                                        <th onclick="handleSort('research', 'stars')">Stars <i data-lucide="chevrons-up-down" style="width:12px;"></i></th>
+                                        <th onclick="handleSort('research', 'date')">Published Date</th>
+                                        <th>arXiv Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="research-tbody"></tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-footer">
+                            <span id="research-page-info">Showing records...</span>
+                            <div class="pagination-controls">
+                                <button class="page-btn" id="research-prev" onclick="changePage('research', -1)"><i data-lucide="chevron-left" style="width:14px;"></i></button>
+                                <button class="page-btn" id="research-next" onclick="changePage('research', 1)"><i data-lucide="chevron-right" style="width:14px;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     VIEW 4: AI STARTUPS EXPLORER
+                     ═══════════════════════════════════════════════════════════════ -->
+                <section class="view-section" id="view-startups">
+                    <div class="table-panel">
+                        <div class="table-controls">
+                            <div class="table-filter-group">
+                                <div class="search-input-wrap">
+                                    <i data-lucide="search" class="search-icon"></i>
+                                    <input type="text" placeholder="Search startups, organizations..." oninput="handleSearch('startups', this.value)">
+                                </div>
+                                <select class="filter-select" onchange="handleFilter('startups', 'source', this.value)">
+                                    <option value="all">All Sources</option>
+                                    <option value="Hugging Face">Hugging Face Ecosystem</option>
+                                    <option value="GitHub">GitHub AI Orgs</option>
+                                </select>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <button class="btn-secondary-custom" onclick="loadCategoryData('startups')">
+                                    <i data-lucide="rotate-ccw" style="width:14px;"></i> Refresh
+                                </button>
+                                <a href="/downloads/startups.csv" download class="btn-primary-custom">
+                                    <i data-lucide="download" style="width:14px;"></i> Export CSV
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="enterprise-table">
+                                <thead>
+                                    <tr>
+                                        <th onclick="handleSort('startups', 'name')">Startup / Organization Name <i data-lucide="chevrons-up-down" style="width:12px;"></i></th>
+                                        <th>Source</th>
+                                        <th>Source Profile URL</th>
+                                        <th onclick="handleSort('startups', 'date')">Discovered</th>
+                                        <th>Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="startups-tbody"></tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-footer">
+                            <span id="startups-page-info">Showing records...</span>
+                            <div class="pagination-controls">
+                                <button class="page-btn" id="startups-prev" onclick="changePage('startups', -1)"><i data-lucide="chevron-left" style="width:14px;"></i></button>
+                                <button class="page-btn" id="startups-next" onclick="changePage('startups', 1)"><i data-lucide="chevron-right" style="width:14px;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     VIEW 5: AI JOBS EXPLORER
+                     ═══════════════════════════════════════════════════════════════ -->
+                <section class="view-section" id="view-jobs">
+                    <div class="table-panel">
+                        <div class="table-controls">
+                            <div class="table-filter-group">
+                                <div class="search-input-wrap">
+                                    <i data-lucide="search" class="search-icon"></i>
+                                    <input type="text" placeholder="Search jobs, companies, skills..." oninput="handleSearch('jobs', this.value)">
+                                </div>
+                                <select class="filter-select" onchange="handleFilter('jobs', 'roleFamily', this.value)">
+                                    <option value="all">All Role Families</option>
+                                    <option value="Machine Learning">Machine Learning Engineer</option>
+                                    <option value="Research">Research Scientist / ML Research</option>
+                                    <option value="Infrastructure">AI Infrastructure / MLOps</option>
+                                    <option value="Software">Software Engineering (AI Apps)</option>
+                                    <option value="Product">Product Management</option>
+                                </select>
+                                <label class="d-flex align-items-center gap-2 text-sub small ms-1" style="cursor: pointer;">
+                                    <input type="checkbox" onchange="handleFilter('jobs', 'freshOnly', this.checked)"> Strictly Fresh (&lt;24h)
+                                </label>
+                                <label class="d-flex align-items-center gap-2 text-sub small ms-1" style="cursor: pointer;">
+                                    <input type="checkbox" onchange="handleFilter('jobs', 'remoteOnly', this.checked)"> Remote
+                                </label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <button class="btn-secondary-custom" onclick="loadCategoryData('jobs')">
+                                    <i data-lucide="rotate-ccw" style="width:14px;"></i> Refresh
+                                </button>
+                                <a href="/downloads/jobs.csv" download class="btn-primary-custom">
+                                    <i data-lucide="download" style="width:14px;"></i> Export CSV
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="enterprise-table">
+                                <thead>
+                                    <tr>
+                                        <th onclick="handleSort('jobs', 'title')">Job Title <i data-lucide="chevrons-up-down" style="width:12px;"></i></th>
+                                        <th onclick="handleSort('jobs', 'company')">Company</th>
+                                        <th>Role Family</th>
+                                        <th>Workplace</th>
+                                        <th>Freshness</th>
+                                        <th onclick="handleSort('jobs', 'date')">Posted</th>
+                                        <th>Apply</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="jobs-tbody"></tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-footer">
+                            <span id="jobs-page-info">Showing records...</span>
+                            <div class="pagination-controls">
+                                <button class="page-btn" id="jobs-prev" onclick="changePage('jobs', -1)"><i data-lucide="chevron-left" style="width:14px;"></i></button>
+                                <button class="page-btn" id="jobs-next" onclick="changePage('jobs', 1)"><i data-lucide="chevron-right" style="width:14px;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     VIEW 6: AI NEWS EXPLORER
+                     ═══════════════════════════════════════════════════════════════ -->
+                <section class="view-section" id="view-news">
+                    <div class="table-panel">
+                        <div class="table-controls">
+                            <div class="table-filter-group">
+                                <div class="search-input-wrap">
+                                    <i data-lucide="search" class="search-icon"></i>
+                                    <input type="text" placeholder="Search news articles, topics..." oninput="handleSearch('news', this.value)">
+                                </div>
+                                <label class="d-flex align-items-center gap-2 text-sub small ms-2" style="cursor: pointer;">
+                                    <input type="checkbox" onchange="handleFilter('news', 'freshOnly', this.checked)"> Strictly Fresh (&lt;24h)
+                                </label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <button class="btn-secondary-custom" onclick="loadCategoryData('news')">
+                                    <i data-lucide="rotate-ccw" style="width:14px;"></i> Refresh
+                                </button>
+                                <a href="/downloads/news.csv" download class="btn-primary-custom">
+                                    <i data-lucide="download" style="width:14px;"></i> Export CSV
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="enterprise-table">
+                                <thead>
+                                    <tr>
+                                        <th onclick="handleSort('news', 'title')">Article Headline <i data-lucide="chevrons-up-down" style="width:12px;"></i></th>
+                                        <th>Publication Source</th>
+                                        <th>Freshness</th>
+                                        <th onclick="handleSort('news', 'date')">Published Date</th>
+                                        <th>Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="news-tbody"></tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-footer">
+                            <span id="news-page-info">Showing records...</span>
+                            <div class="pagination-controls">
+                                <button class="page-btn" id="news-prev" onclick="changePage('news', -1)"><i data-lucide="chevron-left" style="width:14px;"></i></button>
+                                <button class="page-btn" id="news-next" onclick="changePage('news', 1)"><i data-lucide="chevron-right" style="width:14px;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     VIEW 7: ENTITY MAPPINGS LOG
+                     ═══════════════════════════════════════════════════════════════ -->
+                <section class="view-section" id="view-mappings">
+                    <div class="table-panel">
+                        <div class="table-controls">
+                            <div class="table-filter-group">
+                                <div class="search-input-wrap">
+                                    <i data-lucide="search" class="search-icon"></i>
+                                    <input type="text" placeholder="Search raw or canonical entity name..." oninput="handleSearch('mappings', this.value)">
+                                </div>
+                                <select class="filter-select" onchange="handleFilter('mappings', 'method', this.value)">
+                                    <option value="all">All Resolution Methods</option>
+                                    <option value="exact">Exact Match</option>
+                                    <option value="alias">Alias Registry</option>
+                                    <option value="rule_based">Rule-Based Normalization</option>
+                                    <option value="fuzzy">Fuzzy Match</option>
+                                    <option value="manual_review">Manual Review Flagged</option>
+                                </select>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <button class="btn-secondary-custom" onclick="loadCategoryData('mappings')">
+                                    <i data-lucide="rotate-ccw" style="width:14px;"></i> Refresh
+                                </button>
+                                <a href="/downloads/entity_mapping_log.csv" download class="btn-primary-custom">
+                                    <i data-lucide="download" style="width:14px;"></i> Export Audit CSV
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="enterprise-table">
+                                <thead>
+                                    <tr>
+                                        <th onclick="handleSort('mappings', 'raw_name')">Raw Discovered Name <i data-lucide="chevrons-up-down" style="width:12px;"></i></th>
+                                        <th onclick="handleSort('mappings', 'canonical_name')">Canonical Entity Name</th>
+                                        <th>Resolution Method</th>
+                                        <th onclick="handleSort('mappings', 'confidence')">Confidence <i data-lucide="chevrons-up-down" style="width:12px;"></i></th>
+                                        <th>Resolved At</th>
+                                        <th>Source</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="mappings-tbody"></tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-footer">
+                            <span id="mappings-page-info">Showing records...</span>
+                            <div class="pagination-controls">
+                                <button class="page-btn" id="mappings-prev" onclick="changePage('mappings', -1)"><i data-lucide="chevron-left" style="width:14px;"></i></button>
+                                <button class="page-btn" id="mappings-next" onclick="changePage('mappings', 1)"><i data-lucide="chevron-right" style="width:14px;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     VIEW 8: DATA EXPORTS CENTER
+                     ═══════════════════════════════════════════════════════════════ -->
+                <section class="view-section" id="view-exports">
+                    <div class="mb-4">
+                        <h2 class="fw-bold mb-1">Intelligence Export Center</h2>
+                        <span class="text-sub">Download consolidated datasets generated by the autonomous ingestion engine.</span>
+                    </div>
+
+                    <div class="export-grid">
+                        <!-- Excel Unified -->
+                        <div class="export-card" style="border-color: rgba(16, 185, 129, 0.4);">
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="badge badge-emerald"><i data-lucide="file-spreadsheet"></i> Multi-Sheet Excel</span>
+                                    <span class="text-muted small">~1.2 MB</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-main mb-1">Unified Intelligence Workbook</h3>
+                                <p class="text-sub small">Consolidates 7 formatted sheets: Summary Dashboard, Products, Research Papers, Startups, Jobs, News, and Entity Mappings.</p>
+                            </div>
+                            <a href="/downloads/ai_intelligence_output.xlsx" download class="btn-primary-custom">
+                                <i data-lucide="download"></i> Download .xlsx Workbook
+                            </a>
+                        </div>
+
+                        <!-- Architecture PDF -->
+                        <div class="export-card" style="border-color: rgba(34, 211, 238, 0.4);">
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="badge badge-cyan"><i data-lucide="file-text"></i> Architecture PDF</span>
+                                    <span class="text-muted small">3 Pages (Strict)</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-main mb-1">Platform Architecture Specification</h3>
+                                <p class="text-sub small">Executive blueprint covering the 500k+ scale distributed engine, pipeline flowcharts, database schema, and resilience design.</p>
+                            </div>
+                            <a href="/downloads/architecture.pdf" download class="btn-primary-custom">
+                                <i data-lucide="file-down"></i> Download Architecture PDF
+                            </a>
+                        </div>
+
+                        <!-- Products CSV -->
+                        <div class="export-card">
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="badge badge-slate">CSV Format</span>
+                                    <span class="text-muted small">1,313 Rows</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-main mb-1">AI Products CSV</h3>
+                                <p class="text-sub small">Foundation models, interactive Spaces apps, and tools with pricing categories and metadata.</p>
+                            </div>
+                            <a href="/downloads/products.csv" download class="btn-secondary-custom">
+                                <i data-lucide="download"></i> Download products.csv
+                            </a>
+                        </div>
+
+                        <!-- Research CSV -->
+                        <div class="export-card">
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="badge badge-slate">CSV Format</span>
+                                    <span class="text-muted small">1,229 Rows</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-main mb-1">Research Papers CSV</h3>
+                                <p class="text-sub small">arXiv papers across cs.AI, cs.LG, cs.CL, cs.CV, cs.RO with GitHub repositories and star counts.</p>
+                            </div>
+                            <a href="/downloads/research_papers.csv" download class="btn-secondary-custom">
+                                <i data-lucide="download"></i> Download research_papers.csv
+                            </a>
+                        </div>
+
+                        <!-- Startups CSV -->
+                        <div class="export-card">
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="badge badge-slate">CSV Format</span>
+                                    <span class="text-muted small">658 Rows</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-main mb-1">AI Startups & Orgs CSV</h3>
+                                <p class="text-sub small">Verified AI companies and engineering organizations from Hugging Face and GitHub ecosystems.</p>
+                            </div>
+                            <a href="/downloads/startups.csv" download class="btn-secondary-custom">
+                                <i data-lucide="download"></i> Download startups.csv
+                            </a>
+                        </div>
+
+                        <!-- Jobs CSV -->
+                        <div class="export-card">
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="badge badge-slate">CSV Format</span>
+                                    <span class="text-muted small">1,776 Rows</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-main mb-1">AI Jobs CSV</h3>
+                                <p class="text-sub small">Positions from Greenhouse, Ashby, and Lever ATS boards with role family classifications and 24h tags.</p>
+                            </div>
+                            <a href="/downloads/jobs.csv" download class="btn-secondary-custom">
+                                <i data-lucide="download"></i> Download jobs.csv
+                            </a>
+                        </div>
+
+                        <!-- News CSV -->
+                        <div class="export-card">
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="badge badge-slate">CSV Format</span>
+                                    <span class="text-muted small">Verified Records</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-main mb-1">AI News CSV</h3>
+                                <p class="text-sub small">Articles from TechCrunch AI, The Decoder, MarkTechPost, and MIT Technology Review.</p>
+                            </div>
+                            <a href="/downloads/news.csv" download class="btn-secondary-custom">
+                                <i data-lucide="download"></i> Download news.csv
+                            </a>
+                        </div>
+
+                        <!-- Entity Mapping CSV -->
+                        <div class="export-card">
+                            <div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="badge badge-slate">CSV Format</span>
+                                    <span class="text-muted small">1,121 Rows</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-main mb-1">Entity Mapping Audit Log</h3>
+                                <p class="text-sub small">Raw to canonical matching log with confidence scores and normalization method tracking.</p>
+                            </div>
+                            <a href="/downloads/entity_mapping_log.csv" download class="btn-secondary-custom">
+                                <i data-lucide="download"></i> Download entity_mapping_log.csv
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     VIEW 9: INGESTION PIPELINE MANAGEMENT
+                     ═══════════════════════════════════════════════════════════════ -->
+                <section class="view-section" id="view-ingestion">
+                    <div class="mb-4">
+                        <h2 class="fw-bold mb-1">Pipeline & Worker Management</h2>
+                        <span class="text-sub">Trigger asynchronous collectors, monitor extraction queues, and inspect execution logs.</span>
+                    </div>
+
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-8">
+                            <div class="table-panel p-4">
+                                <h3 class="h6 fw-bold text-main mb-3">Individual Collector Triggers</h3>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <button class="btn-secondary-custom w-100 justify-content-start p-3" onclick="triggerPipeline('products')">
+                                            <i data-lucide="box" class="text-cyan"></i>
+                                            <div class="text-start ms-2">
+                                                <div class="fw-bold">AI Products Ingestion</div>
+                                                <div class="text-muted small">Hugging Face Models & Spaces</div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button class="btn-secondary-custom w-100 justify-content-start p-3" onclick="triggerPipeline('research')">
+                                            <i data-lucide="graduation-cap" class="text-blue"></i>
+                                            <div class="text-start ms-2">
+                                                <div class="fw-bold">Research Papers Ingestion</div>
+                                                <div class="text-muted small">arXiv API Atom Pagination</div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button class="btn-secondary-custom w-100 justify-content-start p-3" onclick="triggerPipeline('startups')">
+                                            <i data-lucide="building-2" class="text-amber"></i>
+                                            <div class="text-start ms-2">
+                                                <div class="fw-bold">AI Startups Ingestion</div>
+                                                <div class="text-muted small">HF Orgs & GitHub AI Orgs</div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button class="btn-secondary-custom w-100 justify-content-start p-3" onclick="triggerPipeline('jobs')">
+                                            <i data-lucide="briefcase" class="text-emerald"></i>
+                                            <div class="text-start ms-2">
+                                                <div class="fw-bold">AI Jobs Ingestion</div>
+                                                <div class="text-muted small">Greenhouse, Ashby, Lever ATS</div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button class="btn-secondary-custom w-100 justify-content-start p-3" onclick="triggerPipeline('news')">
+                                            <i data-lucide="newspaper" class="text-purple"></i>
+                                            <div class="text-start ms-2">
+                                                <div class="fw-bold">AI News Ingestion</div>
+                                                <div class="text-muted small">TechCrunch, Decoder, MarkTechPost</div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button class="btn-primary-custom w-100 justify-content-start p-3" onclick="triggerPipeline('all')">
+                                            <i data-lucide="zap"></i>
+                                            <div class="text-start ms-2">
+                                                <div class="fw-bold">Run Master Orchestrator</div>
+                                                <div class="small" style="opacity: 0.85;">Execute All 5 Ingestion Pipelines</div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="table-panel p-4 h-100">
+                                <h3 class="h6 fw-bold text-main mb-3">Orchestration Parameters</h3>
+                                <ul class="list-unstyled text-sub small d-flex flex-column gap-2 mb-0">
+                                    <li><strong class="text-main">Rate Limit GitHub:</strong> 25 req/min (Token bucket)</li>
+                                    <li><strong class="text-main">Rate Limit arXiv:</strong> 30 req/min (3s delay)</li>
+                                    <li><strong class="text-main">Rate Limit ATS:</strong> 40 req/min</li>
+                                    <li><strong class="text-main">Deduplication:</strong> SHA-256 URL Hash + RapidFuzz</li>
+                                    <li><strong class="text-main">Freshness Window:</strong> UTC &le; 24.0 Hours Strict</li>
+                                    <li><strong class="text-main">Entity Threshold:</strong> Token-set ratio &ge; 85%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ═══════════════════════════════════════════════════════════════
+                     VIEW 10: SYSTEM HEALTH
+                     ═══════════════════════════════════════════════════════════════ -->
+                <section class="view-section" id="view-health">
+                    <div class="mb-4">
+                        <h2 class="fw-bold mb-1">System Health & Telemetry</h2>
+                        <span class="text-sub">Real-time status of backend services, database connectors, and ingestion pipelines.</span>
+                    </div>
+
+                    <div id="health-report-box" class="mb-4">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <div class="table-panel p-4">
+                        <h3 class="h6 fw-bold text-main mb-3">Core Platform Configuration</h3>
+                        <div class="table-responsive">
+                            <table class="enterprise-table">
+                                <thead>
+                                    <tr>
+                                        <th>Component</th>
+                                        <th>Active Implementation</th>
+                                        <th>Operational State</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-bold">Primary Database</td>
+                                        <td>PostgreSQL AsyncPG with SQLite Dual Failover</td>
+                                        <td><span class="badge badge-emerald">Operational</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Extraction Engine</td>
+                                        <td>Multi-Provider Fallback (Gemini $\to$ Groq $\to$ DeepSeek) + Semantic Chunking</td>
+                                        <td><span class="badge badge-cyan">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Entity Resolver</td>
+                                        <td>Rule-Based Suffix Stripping + 70 Seed Orgs + RapidFuzz Scoring</td>
+                                        <td><span class="badge badge-emerald">1,121 Logged</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Export Subsystem</td>
+                                        <td>Multi-tab OpenPyXL + Streaming CSV + UTF-8 JSON</td>
+                                        <td><span class="badge badge-emerald">Ready</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Persistent Enterprise Footer -->
+                <footer class="app-footer">
+                    <div class="footer-links">
+                        <a href="/privacy">Privacy Policy</a>
+                        <span class="sep">•</span>
+                        <a href="/terms">Terms of Service</a>
+                        <span class="sep">•</span>
+                        <a href="/docs" target="_blank">API Documentation</a>
+                        <span class="sep">•</span>
+                        <a href="/downloads/architecture.pdf" target="_blank">Architecture PDF</a>
+                    </div>
+                    <div class="footer-copy">
+                        FrontierAtlas AI Intelligence Platform. All rights reserved. Source attribution preserved for all records.
+                    </div>
+                </footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         GLOBAL SEARCH OVERLAY MODAL (CTRL + K)
+         ───────────────────────────────────────────────────────────────────────── -->
+    <div class="modal-backdrop" id="search-modal">
+        <div class="search-dialog">
+            <div class="search-modal-header">
+                <i data-lucide="search" style="color:var(--cyan); width:18px;"></i>
+                <input type="text" class="search-modal-input" id="search-modal-input" placeholder="Search products, research papers, startups, jobs, news...">
+                <span class="search-kbd">ESC</span>
+            </div>
+            <div class="search-results-list" id="search-results-list">
+                <div class="p-4 text-center text-muted" style="font-size:0.85rem;">
+                    Type to search across all intelligence categories...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────
+         DETAIL SLIDE-OUT DRAWER
+         ───────────────────────────────────────────────────────────────────────── -->
+    <div class="detail-drawer" id="detail-drawer">
+        <div class="drawer-header">
+            <div>
+                <span class="badge badge-cyan" id="drawer-category">DETAILS</span>
+                <h3 class="h6 fw-bold text-main mt-1 mb-0 text-truncate" id="drawer-title" style="max-width: 380px;">Record</h3>
+            </div>
+            <button class="sidebar-collapse-btn" id="drawer-close-btn">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="drawer-body" id="drawer-body">
+            <!-- Dynamic fields -->
+        </div>
+        <div class="drawer-footer">
+            <button class="btn-primary-custom flex-grow-1" id="drawer-open-btn">
+                <i data-lucide="external-link"></i> Open Source Link
+            </button>
+            <button class="btn-secondary-custom" id="drawer-copy-btn" title="Copy Link">
+                <i data-lucide="copy"></i> Copy
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Application Script -->
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,965 @@
+[
+  {
+    "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+    "full_text": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+    "url_hash": "7289e21f33e265e97a89457e8874498959fdf3c193ec812177245344db63d11e",
+    "published_at": "2026-11-21T21:37:10+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "44ec8909-e9b5-4b62-b569-8fa0f69de67a",
+    "article_url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "A tale of two Nvidias",
+    "full_text": "We got two very different pictures of Nvidia:  the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+    "url_hash": "8ed913cfa76c678b6975203881a5d4c289b146fa226093db58ea135d113533af",
+    "published_at": "2026-11-21T21:07:42+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "3b0913a4-b02c-49b9-a914-825c04d1f474",
+    "article_url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "Here are the top AI agents that can live in your text messages",
+    "full_text": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+    "url_hash": "d15566b2aef3b460300ba5fc8eaad18544e50a671035648b1fa1cb014bf7609f",
+    "published_at": "2026-11-21T17:00:00+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "24797562-6b11-4537-98c5-275264c31e24",
+    "article_url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+    "full_text": "An actor has licensed his face to a microdrama startup: in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+    "url_hash": "53e893a48ca02ab2292951b3421a66907c423a2d7425fb40073a816475e92a31",
+    "published_at": "2026-11-21T16:00:00+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "c4324eaa-fbdb-49cc-827d-8d24ca4c12c9",
+    "article_url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
+    "full_text": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+    "url_hash": "05d06a2ae37185a1550dd73a3abd6c04f6f98d5ceeef9152d246307752b82f12",
+    "published_at": "2026-11-20T19:53:41+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "1cbbdf15-5452-4f2e-a2ac-5b2f1fb04f90",
+    "article_url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "AI claimed a solution to the 167-year-old Riemann hypothesis: and a human did, too",
+    "full_text": "Mathematicians are having their minds blown by the latest AI-driven result: and there's a competing human solution, too.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+    "url_hash": "81e856d23e6ca9408619d45198d754d1b5b2622c3be523fe660ae5f03d7161a5",
+    "published_at": "2026-11-20T19:32:08+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "9906154b-1272-4054-9a2d-9ba2f59f5514",
+    "article_url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Chips can survive the space environment: can their financing?",
+    "full_text": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
+    "url_hash": "fc059eec5b023eb85950a1f73a262d5b73cc561d5073c1159d33aec3760c7d84",
+    "published_at": "2026-11-20T17:40:01+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "a62cea06-a12f-41a8-b568-5809dcc625dc",
+    "article_url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
+    "full_text": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+    "url_hash": "bbcc1ed9f7950c3b2e2b14fa7c9123362f792965a085584fba55720eda716ebf",
+    "published_at": "2026-11-20T14:55:44+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "e00b7b0a-63ba-40f7-a30f-eccaba2928ad",
+    "article_url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Six AI-powered gadgets that could make your home office smarter",
+    "full_text": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
+    "url_hash": "4d2d20d171989c2fb3d05f8732243107efa027df8d6136eb7f39d3619a99a221",
+    "published_at": "2026-11-20T14:00:00+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "654422bf-03cb-44c4-ba09-a7fba8cf7760",
+    "article_url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Apple may be developing its own AI agent that runs your Mac",
+    "full_text": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+    "url_hash": "8288c457eabd2464774e38576c72d62d04ad1399f95d59d32b27b77c36ea8034",
+    "published_at": "2026-11-20T00:56:01+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "25e2e24e-6293-48ee-a305-9ed9591a6c00",
+    "article_url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+    "full_text": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+    "url_hash": "327354b7a28e2854b8fde8dfdf06a3f4197a65ce6b95b71eb07970674fd22fd0",
+    "published_at": "2026-11-20T00:43:50+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "9e57615a-5140-43c0-8e15-7931da6464dc",
+    "article_url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Meta’s new Muse Charm device may cost $300",
+    "full_text": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+    "url_hash": "094a4dd2aa9bf45ff9eca9b6f017cbb7c83ad9c7924ccda43d45f70ae2bc7cf9",
+    "published_at": "2026-11-19T21:58:06+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "4ccd40b6-1ede-46aa-bf49-c191cf78d2e9",
+    "article_url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "These tech outages are giving Y2K, AI agent style",
+    "full_text": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+    "url_hash": "80283102200146719cd0e93f42854a2f00da74b926088417003f34aa57da149e",
+    "published_at": "2026-11-19T21:42:31+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "531c0d3b-241c-4bf0-af12-17f4cb6d80b0",
+    "article_url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "The unfolding Jensen Huang scandal: a timeline",
+    "full_text": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+    "url_hash": "1fbaae0c3ffb18e8c78aacd87b2c0beea414426c9bc0f704d9fe6d43cd4ae1cb",
+    "published_at": "2026-11-19T20:18:49+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "ad9edf07-fe8b-495c-9d77-0062324515cb",
+    "article_url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Anthropic’s IPO could deliver $156B to charity",
+    "full_text": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
+    "url_hash": "0027e4a1d292e51621fcf4dbccb9599f77667c3c00106c620ca948a5b42c79d5",
+    "published_at": "2026-11-19T19:10:45+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "68833170-dc07-49ab-9ce9-2cb3e5f476fd",
+    "article_url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Google gives Gemini the ability to use your Mac for you",
+    "full_text": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+    "url_hash": "3a850c903b02169f2b985d19f0a04c8c841e8f1a46d60968e2038de74f5eff50",
+    "published_at": "2026-11-19T18:09:11+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "1fd10a2b-58e3-42f0-aea9-adc9786f44e3",
+    "article_url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
+    "full_text": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+    "url_hash": "ee20d352f0da08b76e7e3c023f828c83cee1f174045bfe387cdc98bdc8d0bcd2",
+    "published_at": "2026-11-19T17:38:40+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "4270449c-5d3a-4226-9b31-a21bfacfdc49",
+    "article_url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories",
+    "full_text": "Everful has raised $48.5 million to expand its factory-direct sourcing platform, helping retailers source products from overseas manufacturers.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+    "url_hash": "8bc2fdc1aef603b8f8028b99faa059c0c5eeaa372a012340e18a62dc4c305f02",
+    "published_at": "2026-11-19T17:00:00+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "fe55672f-f0cb-4b09-b8e4-ff9d2db2701f",
+    "article_url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
+    "full_text": "Anthropic's IPO price was set at $83, representing more than $80 billion in new capital raised.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
+    "url_hash": "c12b546d5a71cb458f54fcb83d199fee1a8307e58f02c4e08891d537659e3aa5",
+    "published_at": "2026-11-19T16:59:23+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "e127b8d8-78f2-4064-829d-4c17266a6754",
+    "article_url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "At Nasdaq opening bell, Anthropic CEO recommits to pacing AI development",
+    "full_text": "In his Nasdaq opening bell speech, Dario Amodei reiterated Anthropic's commitment to pacing AI development, regardless of business or political pressure.",
+    "source_name": "TechCrunch AI",
+    "source_url": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
+    "url_hash": "d708a4dbf97db5f26e869833f314376bfc69fa5d652054c3297ea63707101c77",
+    "published_at": "2026-11-19T16:19:41+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:08.955408+00:00",
+    "collected_at": "2026-11-22T16:21:08.955408+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Leading tech publication with dedicated AI section and reliable RSS feed"
+    },
+    "id": "f0ecb792-e06f-4096-912d-ea00c0a37daa",
+    "article_url": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "The most misunderstood graph in AI just got a major update",
+    "full_text": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory: but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding.  The report is an update to the organization’s time horizon plot, which was widely…",
+    "source_name": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+    "url_hash": "001e6b6e613bbaaf52f6be9e7b3eacac27c91c02d812cd2a8752ca7086850cef",
+    "published_at": "2026-11-20T18:15:15+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.058059+00:00",
+    "collected_at": "2026-11-22T16:21:09.058059+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Research-backed AI coverage with verified publication dates"
+    },
+    "id": "23c85c0c-72e1-404d-8b5a-45b50bec77cc",
+    "article_url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "The Download: inside the quest to make our minds immortal",
+    "full_text": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. What we learned when our Roundtables explored the quest to make minds immortal To preserve our sense of self, some scientists are working on ways to keep our brains going: even beyond…",
+    "source_name": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/11/20/1149371/the-download-quest-to-make-minds-immortal/",
+    "url_hash": "e94e07951c191203e70d157722528eafd4bb80902272d49a117c58a799e55ab6",
+    "published_at": "2026-11-20T13:10:00+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.058059+00:00",
+    "collected_at": "2026-11-22T16:21:09.058059+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Research-backed AI coverage with verified publication dates"
+    },
+    "id": "529970af-ef6e-4319-aca0-24fb2b74f6e4",
+    "article_url": "https://www.technologyreview.com/2026/11/20/1149371/the-download-quest-to-make-minds-immortal/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "The Download: a living liver, a billion-dollar battery deal, and AI hype",
+    "full_text": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. A human liver has been kept alive outside the body for a record seven weeks Researchers in Australia claim they’ve kept a human liver alive on life support outside the body…",
+    "source_name": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/11/19/1148979/the-download-liver-kept-alive-sila-battery-deal-ai-hype/",
+    "url_hash": "cab673f80ff9839867c734fae2c2bbb87fb153279d0bce4729ee732109e83c85",
+    "published_at": "2026-11-19T13:10:00+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.058059+00:00",
+    "collected_at": "2026-11-22T16:21:09.058059+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Research-backed AI coverage with verified publication dates"
+    },
+    "id": "1c7b1c61-a7ac-47db-bd76-2bd422c09a53",
+    "article_url": "https://www.technologyreview.com/2026/11/19/1148979/the-download-liver-kept-alive-sila-battery-deal-ai-hype/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "A human liver has been kept alive outside the body for a record seven weeks",
+    "full_text": "Researchers in Australia claim they’ve kept a human liver alive, on life support, outside the body for seven weeks, opening up speculative new possibilities in biomedical engineering. The feat, whose details are pending publication, was carried out in Sydney after a team led by surgeon and inventor Carlo Pulitano connected a donated liver to a…",
+    "source_name": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/",
+    "url_hash": "6167b632613f12dd3b6477ef1f21eb2668c1a8f31fc7dd45646614a5510317fd",
+    "published_at": "2026-11-19T12:00:00+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.058059+00:00",
+    "collected_at": "2026-11-22T16:21:09.058059+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Research-backed AI coverage with verified publication dates"
+    },
+    "id": "8a0b0f7b-3d0c-4365-b2ba-670dbdf2768a",
+    "article_url": "https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "What a billion-dollar deal says about the US battery market",
+    "full_text": "After a tough few years littered with some high-profile failures, there’s some positive news for next-generation batteries in the US. Sila just signed an agreement with Panasonic Energy, a global battery manufacturer, to supply silicon-carbon anode material, a possible key to smaller, lighter batteries. It’s a deal that Sila says could be worth more than…",
+    "source_name": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/11/19/1148922/sila-panasonic-battery-deal/",
+    "url_hash": "1c5087d4a04ce5e368064c69b2384d6fc9d7f57609688f0d3b7d6a8079de0a6d",
+    "published_at": "2026-11-19T11:00:00+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.058059+00:00",
+    "collected_at": "2026-11-22T16:21:09.058059+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Research-backed AI coverage with verified publication dates"
+    },
+    "id": "cc990221-51e7-4b85-9043-82b7f331f5e9",
+    "article_url": "https://www.technologyreview.com/2026/11/19/1148922/sila-panasonic-battery-deal/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "The AI Hype Index: AI is everywhere",
+    "full_text": "Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up the stairs to clean someone’s rooms. Go to the supermarket, and…",
+    "source_name": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/",
+    "url_hash": "76a160b2736ec6d054a32164c2d6026036082cb93da0f7ea5dd29095e43cc3c3",
+    "published_at": "2026-11-18T14:42:44+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.058059+00:00",
+    "collected_at": "2026-11-22T16:21:09.058059+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Research-backed AI coverage with verified publication dates"
+    },
+    "id": "7c96acf4-6bab-4277-9fbf-ba1f90d514bc",
+    "article_url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "The Download: AI learns to smell and hydropower struggles",
+    "full_text": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. This smell startup says its AI nose is as good as a human’s In a New Jersey lab, researchers are trying to sniff every odor on Earth. Their careful notes: “nutty,” “peachy,”…",
+    "source_name": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/11/18/1148845/the-download-ai-learns-to-smell-hydropower-struggles/",
+    "url_hash": "34287111874105b85b502305ebc4e96d83df5938cc1961f18a79afee852a9aac",
+    "published_at": "2026-11-18T13:10:00+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.058059+00:00",
+    "collected_at": "2026-11-22T16:21:09.058059+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Research-backed AI coverage with verified publication dates"
+    },
+    "id": "ee204ab2-d1b2-4cc0-9081-25381463f433",
+    "article_url": "https://www.technologyreview.com/2026/11/18/1148845/the-download-ai-learns-to-smell-hydropower-struggles/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "This smell startup says its AI nose is as good as a human’s",
+    "full_text": "In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes: “nutty,” “peachy,” “marine”: are cross-referenced with a chemical analysis to create a rich set of training data for what AI startup Osmo calls the world’s first foundation…",
+    "source_name": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
+    "url_hash": "0443a0c6c8ceb7b93dc594a7a1b8e897785e3d7b8ac205f1dee4b09232693e93",
+    "published_at": "2026-11-18T10:20:30+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.058059+00:00",
+    "collected_at": "2026-11-22T16:21:09.058059+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Research-backed AI coverage with verified publication dates"
+    },
+    "id": "2ecb5902-1bbb-4f8e-ac45-4fb1fea37966",
+    "article_url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Roundtables: Inside the Quest for Cognitive Immortality",
+    "full_text": "Listen to the session or watch below In an effort to reach an elusive continuity of the self, some far-thinking technologists are working on ways to keep your brain going: even beyond death. Science editor Mary Beth Griggs and senior editor for biomedicine Antonio Regalado explore possible paths to keep your mind going, including gradual brain…",
+    "source_name": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/11/17/1148049/roundtables-inside-the-quest-for-cognitive-immortality/",
+    "url_hash": "665d8227159904d75c3893256129e3e48c6c12a215700949e24c0889eac71220",
+    "published_at": "2026-11-17T18:46:47+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.058059+00:00",
+    "collected_at": "2026-11-22T16:21:09.058059+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Research-backed AI coverage with verified publication dates"
+    },
+    "id": "3134e3ee-2dfa-43ba-bf10-f0323e979e7e",
+    "article_url": "https://www.technologyreview.com/2026/11/17/1148049/roundtables-inside-the-quest-for-cognitive-immortality/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Hydropower hit record lows in the US Southwest this summer",
+    "full_text": "The US Southwest generated 28% less electricity via hydropower between April and August than the 10-year average, according to new data from the US Energy Information Administration. Most hydropower plants in the US rely on dams to hold back water, creating reservoirs. The water can be released through turbines, generating electricity on demand. But an…",
+    "source_name": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/11/17/1148742/hydropower-drought-colorado-river/",
+    "url_hash": "11e12ce775565920ccb2672e0c21e9c3fa185cdc62d470240f9fb2757050cb4a",
+    "published_at": "2026-11-17T17:52:10+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.058059+00:00",
+    "collected_at": "2026-11-22T16:21:09.058059+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "Research-backed AI coverage with verified publication dates"
+    },
+    "id": "02457419-91e4-4f14-83c3-9c712e75f47c",
+    "article_url": "https://www.technologyreview.com/2026/11/17/1148742/hydropower-drought-colorado-river/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "AI coding agents ace isolated tests but complete fewer than one in ten tasks in a simulated workplace",
+    "full_text": "\n         A new real-world test puts AI coding agents in a simulated developer job with colleagues, project boards, and incomplete handoffs, where they have to keep developing software on their own and reliably close open tickets in a messy daily workflow. Even Opus 5.5 and Astra fall far short, solving fewer than one in ten tasks completely. The models finish clear, standalone assignments quickly, but they lose track as autonomous developers. \n The article  AI coding agents ace isolated tests but complete fewer than one in ten tasks in a simulated workplace  appeared first on  The Decoder .",
+    "source_name": "The Decoder",
+    "source_url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+    "url_hash": "24945882501cb72aa5dfc7eb79c915101e1385b379b49113e300dea73836e771",
+    "published_at": "2026-11-22T15:15:48+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:10.197976+00:00",
+    "collected_at": "2026-11-22T16:21:10.197976+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "AI-only outlet with daily coverage and reliable RSS timestamps"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "f538abf3-d478-492a-b1be-081d9fe98f53",
+    "article_url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "Perplexity's new Monitor API turns web search from a one-off query into a nonstop watchdog",
+    "full_text": "\n         Perplexity is launching a Monitor API that searches the web on a schedule and alerts agents via webhook only when relevant changes occur. Its own decision model filters out unimportant results. For Perplexity, the API is part of a broader strategy to stand out from an increasingly interchangeable chatbot business through developer tools. \n The article  Perplexity's new Monitor API turns web search from a one-off query into a nonstop watchdog  appeared first on  The Decoder .",
+    "source_name": "The Decoder",
+    "source_url": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/",
+    "url_hash": "e7b883768e2e6dc24da8f7ae7f1b8f12fc4ff4b814d4cf39359f90b69325fe0e",
+    "published_at": "2026-11-22T14:20:28+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:10.197976+00:00",
+    "collected_at": "2026-11-22T16:21:10.197976+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "AI-only outlet with daily coverage and reliable RSS timestamps"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "f436f882-e983-4fcb-a5ee-559c9d9d75ae",
+    "article_url": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "AI is getting better faster than experts can reliably test whether new systems are safe, METR warns",
+    "full_text": "\n         METR reports that leading AI models like Opus 5.5 and GPT-6 Astra are improving rapidly at research tasks but getting harder to measure. Current data can't rule out a dangerous acceleration in AI development, the organization warns, though it also says common tests may overestimate what the models can actually do. \n The article  AI is getting better faster than experts can reliably test whether new systems are safe, METR warns  appeared first on  The Decoder .",
+    "source_name": "The Decoder",
+    "source_url": "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/",
+    "url_hash": "9a6dc892b9de4543a8789cab238b8d04da0dd713b602206654f9ffe1c626966a",
+    "published_at": "2026-11-22T13:00:43+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:10.197976+00:00",
+    "collected_at": "2026-11-22T16:21:10.197976+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "AI-only outlet with daily coverage and reliable RSS timestamps"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "a105559b-ee07-4957-aa71-750478de53f4",
+    "article_url": "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "Security researchers show how cheap AI inference providers steal keys and snoop on users",
+    "full_text": "\n         Security researchers at Dragos used two million fake AI requests to uncover serious vulnerabilities in the AI supply chain, finding at least three compromised providers, hundreds of stolen AWS keys, and marketplace resellers who were simply reading customer requests. OpenRouter responded by removing three providers and 125 endpoints. \n The article  Security researchers show how cheap AI inference providers steal keys and snoop on users  appeared first on  The Decoder .",
+    "source_name": "The Decoder",
+    "source_url": "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/",
+    "url_hash": "be2721eef93582e6e79b0f1fca5c3061d7c1f8247211db477a7d3c43ee4d5740",
+    "published_at": "2026-11-22T12:07:56+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:10.197976+00:00",
+    "collected_at": "2026-11-22T16:21:10.197976+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "AI-only outlet with daily coverage and reliable RSS timestamps"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "069680b9-6121-4cf3-9a74-0014e84463bd",
+    "article_url": "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "Lean and Mathlib community officially confirms Levent Alpöge's proof of the Riemann hypothesis is correct",
+    "full_text": "\n         The Lean and Mathlib community has officially confirmed Levent Alpöge's proof of the Riemann hypothesis as correct. Dozens of independent verifiers checked the 17 million lines of computer code. The solution arrived years earlier than expected: Terence Tao had predicted it wouldn't happen until around 2050 and didn't expect AI to solve it alone. \n The article  Lean and Mathlib community officially confirms Levent Alpöge's proof of the Riemann hypothesis is correct  appeared first on  The Decoder .",
+    "source_name": "The Decoder",
+    "source_url": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
+    "url_hash": "90b5b151d6473634869304cadb7ef9c440433e290bbbe086011c3104ffc5b9c0",
+    "published_at": "2026-11-22T11:08:31+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:10.197976+00:00",
+    "collected_at": "2026-11-22T16:21:10.197976+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "AI-only outlet with daily coverage and reliable RSS timestamps"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "2beb32c1-b064-4be6-a516-81995db7097f",
+    "article_url": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude",
+    "full_text": "\n         OpenAI's GPT-6.2 Astra and Sol give much shorter, more direct answers than their predecessors, but they are also less willing to admit uncertainty. Anthropic's Claude models score well ahead on transparency. \n The article  GPT-6.2 Astra and Sol get to the point faster but score lower on transparency than Claude  appeared first on  The Decoder .",
+    "source_name": "The Decoder",
+    "source_url": "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/",
+    "url_hash": "7f95ea087cae71a358ff33ca5c98b366a3f2a0021c570f58a7ecce311b8eb20e",
+    "published_at": "2026-11-22T09:41:37+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:10.197976+00:00",
+    "collected_at": "2026-11-22T16:21:10.197976+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "AI-only outlet with daily coverage and reliable RSS timestamps"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "64f55af6-2ee2-40f4-a60f-6f11ab612537",
+    "article_url": "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "Nvidia researchers argue huge AI context windows are a dead end",
+    "full_text": "\n         Nvidia researchers argue that language models often don't need their full context windows: which are slow, expensive, and prone to errors: and propose an alternative. In tests, periodic summaries and targeted keyword search usually matched full-context results at a fraction of the cost. The team even proposes a new class of models that works with short notes instead of long context. \n The article  Nvidia researchers argue huge AI context windows are a dead end  appeared first on  The Decoder .",
+    "source_name": "The Decoder",
+    "source_url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
+    "url_hash": "0a04003cba71b6ac2fcfb69886235d66e4a42d4a32c5a3c23f7dd99b67410daf",
+    "published_at": "2026-11-21T16:23:45+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:10.197976+00:00",
+    "collected_at": "2026-11-22T16:21:10.197976+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "AI-only outlet with daily coverage and reliable RSS timestamps"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "5ece8974-ad5c-450d-bf95-f71dbacfb5df",
+    "article_url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "Silicon Valley's growing obsession with AI doomsday is turning parts of the tech industry toward cult-like devotion",
+    "full_text": "\n         A Buddhist monastery in Vermont called Maple wants to establish itself as Silicon Valley's spiritual authority while creating its own AI god. According to a New Yorker report, leader Soryu Forall's group records every breath its members take to train an AI in his image. Former members report manipulation and psychological breakdowns. \n The article  Silicon Valley's growing obsession with AI doomsday is turning parts of the tech industry toward cult-like devotion  appeared first on  The Decoder .",
+    "source_name": "The Decoder",
+    "source_url": "https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/",
+    "url_hash": "c08177968139f00b42873b29b19be65224eb07232c577d61fe6c0060f6f32bab",
+    "published_at": "2026-11-21T16:04:29+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:10.197976+00:00",
+    "collected_at": "2026-11-22T16:21:10.197976+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "AI-only outlet with daily coverage and reliable RSS timestamps"
+    },
+    "id": "31619289-6ad1-46a4-9579-f5b0381addb7",
+    "article_url": "https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions",
+    "full_text": "\n         OpenAI has released new prompt templates for GPT-6.2 Astra and Sol meant to fix common model behaviors such as overly brief answers, unnecessary follow-up questions, and excessive testing when coding. The API is changing as well, since editing a conversation's history can discard reasoning content and lower response quality. \n The article  OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions  appeared first on  The Decoder .",
+    "source_name": "The Decoder",
+    "source_url": "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/",
+    "url_hash": "864f2f5a6c2bda06692eb8418345a9edc9ca4a81d31578b01e2a4e9ba3f3a1a6",
+    "published_at": "2026-11-21T13:32:35+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:10.197976+00:00",
+    "collected_at": "2026-11-22T16:21:10.197976+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "AI-only outlet with daily coverage and reliable RSS timestamps"
+    },
+    "id": "ea6744ad-12de-464a-9488-0c5c02c3fce9",
+    "article_url": "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
+    "full_text": "\n         Anthropic mathematician Levent Alpöge says he used Claude to prove the Riemann hypothesis, math's most famous open problem for 167 years, with a proof formalized in Lean that spans over 250,000 pages. Just hours later, Stanford researchers published an independent, entirely human competing proof, and mathematicians are now checking whether either one holds up. \n The article  Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft  appeared first on  The Decoder .",
+    "source_name": "The Decoder",
+    "source_url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
+    "url_hash": "4b0f784ca73798b31fce423ad540aee157ca6462376c2245d4594feae2dfa810",
+    "published_at": "2026-11-21T11:19:49+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:10.197976+00:00",
+    "collected_at": "2026-11-22T16:21:10.197976+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "AI-only outlet with daily coverage and reliable RSS timestamps"
+    },
+    "id": "d7d3d0c6-25d3-4627-86d7-c60f0541c3d7",
+    "article_url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Best Personal AI Agents in 2026: OpenClaw, Hermes Agent, Gemini Spark and More, Compared on Memory, Security and Cost",
+    "full_text": "Hermes Agent, OpenClaw, Gemini Spark, OpenAI dots, Meta Muse and Perplexity Personal Computer ranked on memory, security defaults and real cost. \n The post  Best Personal AI Agents in 2026: OpenClaw, Hermes Agent, Gemini Spark and More, Compared on Memory, Security and Cost  appeared first on  MarkTechPost .",
+    "source_name": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/11/22/best-personal-ai-agents-2026/",
+    "url_hash": "fd57cd1bbb506cd3c5a9c4957e12dac9fc6e6502bf615f1327bc605f08c9cbb2",
+    "published_at": "2026-11-22T10:36:17+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:09.364809+00:00",
+    "collected_at": "2026-11-22T16:21:09.364809+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "AI research paper summaries and industry news with RSS support"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "dea8acf7-b2ef-4c37-9217-d42e4dc0243d",
+    "article_url": "https://www.marktechpost.com/2026/11/22/best-personal-ai-agents-2026/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "Google AI Previews Tool Retrieval in the Gemini API for Large Tool Libraries",
+    "full_text": "Google launched Gemini API Tool Retrieval in preview. Agents keep a large tool library on standby and load each parameter schema only when needed, inside one Interactions API request. \n The post  Google AI Previews Tool Retrieval in the Gemini API for Large Tool Libraries  appeared first on  MarkTechPost .",
+    "source_name": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/",
+    "url_hash": "79cfd32cd6688b728f79068e6c51355891f5563615b16f5c73e556263f27a673",
+    "published_at": "2026-11-22T10:03:54+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:09.364809+00:00",
+    "collected_at": "2026-11-22T16:21:09.364809+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "AI research paper summaries and industry news with RSS support"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "4cf06e25-adf2-40cb-9881-e688515d1a1e",
+    "article_url": "https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "A Team of Researchers from Columbia and CertiK Introduce TensorLean for Formal Verification of GPU Kernels",
+    "full_text": "TensorLean, from Columbia University and CertiK, formally verifies production GPU kernels at the PTX level using Lean. It checked 149 kernel instances, proved 83 correct, and found 38 bugs in FlashAttention, DeepGEMM and more. \n The post  A Team of Researchers from Columbia and CertiK Introduce TensorLean for Formal Verification of GPU Kernels  appeared first on  MarkTechPost .",
+    "source_name": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/",
+    "url_hash": "eaf0a1df2e81af460cdcd09f9192661139315b2d9e43826a974b98750438b907",
+    "published_at": "2026-11-22T01:51:43+00:00",
+    "published_at_verified": true,
+    "published_at_method": "field_published_at_datetime",
+    "discovered_at": "2026-11-22T16:21:09.364809+00:00",
+    "collected_at": "2026-11-22T16:21:09.364809+00:00",
+    "is_fresh": true,
+    "extra_data": {
+      "source_rationale": "AI research paper summaries and industry news with RSS support"
+    },
+    "freshness_checked_at": "2026-11-22T16:21:08.620108+00:00",
+    "id": "5a3e6083-e6c6-4e0e-a211-f63cd3baed4b",
+    "article_url": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/",
+    "is_fresh_24h": true
+  },
+  {
+    "title": "Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac",
+    "full_text": "Thinking Machines released Inkling 2 Mini, a 26.4B-parameter looped MoE transformer with 3.4B active parameters. It runs on a 32GB Mac or one DGX Spark and scores 79.2% on SWE-bench Verified. \n The post  Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac  appeared first on  MarkTechPost .",
+    "source_name": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/",
+    "url_hash": "e341cf19e3512252e8fe1a70c7da327a308ac70cb45f86164dfa58cbda7dda8b",
+    "published_at": "2026-11-21T12:13:50+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.364809+00:00",
+    "collected_at": "2026-11-22T16:21:09.364809+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "AI research paper summaries and industry news with RSS support"
+    },
+    "id": "aa42bc7e-d372-44f7-afec-cafa25edad7c",
+    "article_url": "https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min",
+    "full_text": "OpenAI has released GPT-Live-1.1 in the API. The full-duplex voice model improves multilingual accents and transcription, and a new standby mode bills idle WebRTC time at $0.02 per minute instead of $0.05. \n The post  OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min  appeared first on  MarkTechPost .",
+    "source_name": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
+    "url_hash": "fe5d4f6020be9d6a33fc71d542117774c1768f2c8a7a05516b4ff8bc384402f5",
+    "published_at": "2026-11-21T11:46:17+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.364809+00:00",
+    "collected_at": "2026-11-22T16:21:09.364809+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "AI research paper summaries and industry news with RSS support"
+    },
+    "id": "16b290f6-1e03-4b6f-9dbc-3f9e8bc2f95f",
+    "article_url": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index",
+    "full_text": "Baseten released bison-1 and groundhog-1, open-weight decision models built on Gemma 4. bison-1 scores 76 on the AA Decision Index v2.1, and both models support 128k context and image input. \n The post  Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index  appeared first on  MarkTechPost .",
+    "source_name": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models/",
+    "url_hash": "8df2b0aafffddec9f81865ea09e9b18151680f845b8a8ac52f61e4fbad48147d",
+    "published_at": "2026-11-21T04:01:04+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.364809+00:00",
+    "collected_at": "2026-11-22T16:21:09.364809+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "AI research paper summaries and industry news with RSS support"
+    },
+    "id": "8c6d955a-2640-4227-9d40-199c7f52d21a",
+    "article_url": "https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "RadixArk Ships DaisyRose-27B, a 27B Agentic Coding Model Trained With Reinforcement Learning Only",
+    "full_text": "RadixArk released DaisyRose-27B, an Apache 2.0 agentic coding model post-trained from Qwen3.8-27B with reinforcement learning only. It more than doubles Terminal Bench 4.1 pass@1 to 12.0 and runs on a single GPU. \n The post  RadixArk Ships DaisyRose-27B, a 27B Agentic Coding Model Trained With Reinforcement Learning Only  appeared first on  MarkTechPost .",
+    "source_name": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model/",
+    "url_hash": "229f48cda641310274bf045fc29f04c6b61a050137d70ffac13029b52d48c106",
+    "published_at": "2026-11-20T17:42:29+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.364809+00:00",
+    "collected_at": "2026-11-22T16:21:09.364809+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "AI research paper summaries and industry news with RSS support"
+    },
+    "id": "6980fb22-95ab-4f51-9823-606c8548f4da",
+    "article_url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "NVIDIA AI Releases Nemotron-Labs-Sigma, a Continuous Diffusion Language Model with 14 checkpoints at 3B/8B",
+    "full_text": "NVIDIA released Nemotron-Labs-Sigma, 14 open 3B and 8B continuous diffusion language model checkpoints. Sigma denoises text in a learned 16-D embedding space, distills to few-step samplers, and decodes up to 4.20x faster than autoregressive decoding. \n The post  NVIDIA AI Releases Nemotron-Labs-Sigma, a Continuous Diffusion Language Model with 14 checkpoints at 3B/8B  appeared first on  MarkTechPost .",
+    "source_name": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model/",
+    "url_hash": "0fe63a02d266f38185084c20f69da6e222290fec836b8407691325756eadbece",
+    "published_at": "2026-11-20T14:44:52+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.364809+00:00",
+    "collected_at": "2026-11-22T16:21:09.364809+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "AI research paper summaries and industry news with RSS support"
+    },
+    "id": "a946c60c-0784-4e62-9bd6-22f9d02d94b2",
+    "article_url": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "Meta FAIR Self-Improving Memory Hits 56.0 on Continual Learning Bench",
+    "full_text": "Meta FAIR’s Self-Improving Memory lets Kimi-K2.6 write its own LOAD and OFFLOAD memory prompts, then distills them into its weights. Optimized prompts score 56.0 versus 44.6 for the best hand-written harness on Continual Learning Bench. \n The post  Meta FAIR Self-Improving Memory Hits 56.0 on Continual Learning Bench  appeared first on  MarkTechPost .",
+    "source_name": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation/",
+    "url_hash": "5b45618f88e15d06d442ad39b1d4f2213eaed40c19af2e91e579343516fe8b4c",
+    "published_at": "2026-11-19T21:46:22+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.364809+00:00",
+    "collected_at": "2026-11-22T16:21:09.364809+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "AI research paper summaries and industry news with RSS support"
+    },
+    "id": "3971d40d-55a4-4c31-8028-3d78bef79093",
+    "article_url": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation/",
+    "is_fresh_24h": false
+  },
+  {
+    "title": "13 Best Agent Gateways in 2026 for MCP, A2A and LLM Traffic: Kong, Bifrost, AgentCore, Arcade",
+    "full_text": "We ranked the 13 best agent gateways of 2026 by how they govern model, MCP tool and agent-to-agent traffic, with verified pricing, deployment options and the trade-offs each vendor's marketing leaves out. \n The post  13 Best Agent Gateways in 2026 for MCP, A2A and LLM Traffic: Kong, Bifrost, AgentCore, Arcade  appeared first on  MarkTechPost .",
+    "source_name": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/11/19/best-agent-gateways-2026/",
+    "url_hash": "0172b2ecfe9fef3003e47af0581eb357023763df99fa09c9bcacb77c2bfa99c8",
+    "published_at": "2026-11-19T18:13:21+00:00",
+    "published_at_verified": true,
+    "published_at_method": "parsed_explicit",
+    "discovered_at": "2026-11-22T16:21:09.364809+00:00",
+    "collected_at": "2026-11-22T16:21:09.364809+00:00",
+    "is_fresh": false,
+    "extra_data": {
+      "source_rationale": "AI research paper summaries and industry news with RSS support"
+    },
+    "id": "e1121463-779f-47a8-9222-43737d42b434",
+    "article_url": "https://www.marktechpost.com/2026/11/19/best-agent-gateways-2026/",
+    "is_fresh_24h": false
+  }
+]

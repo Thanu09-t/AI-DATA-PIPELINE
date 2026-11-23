@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found - AI Intelligence Platform</title>
+    <meta name="description" content="The requested resource was not found on the FrontierAtlas AI Intelligence Platform.">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="/static/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+    <link rel="manifest" href="/static/site.webmanifest">
+    
+    <!-- Self-hosted typography via dashboard.css -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        .error-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 3rem 2.5rem;
+            max-width: 520px;
+            width: 100%;
+            box-shadow: var(--shadow-card);
+        }
+        .error-code {
+            font-size: 4.5rem;
+            font-weight: 800;
+            color: var(--cyan);
+            line-height: 1;
+            letter-spacing: -0.04em;
+            margin-bottom: 1rem;
+        }
+        .error-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+        }
+        .error-desc {
+            color: var(--text-sub);
+            font-size: 0.92rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-card">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Resource Not Found</h1>
+            <p class="error-desc">
+                The requested URL or endpoint does not exist in the intelligence catalog. Please verify the URL or return to the main platform.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="/" class="btn-primary-custom">
+                    <i data-lucide="layout-dashboard"></i> Return to Dashboard
+                </a>
+                <a href="/docs" class="btn-secondary-custom" target="_blank">
+                    <i data-lucide="book-open"></i> API Docs
+                </a>
+            </div>
+        </div>
+        <footer class="app-footer mt-4" style="border: none;">
+            <div class="footer-copy">
+                FrontierAtlas AI Intelligence Platform.
+            </div>
+        </footer>
+    </div>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
