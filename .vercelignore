@@ -1,0 +1,22 @@
+# Vercel Deployment Exclusions
+# Keep deployment bundle lightweight and within serverless function limits
+
+# Caches and tests
+.pytest_cache/
+.coverage
+htmlcov/
+tests/
+docs/
+
+# Heavy offline directories
+data/chroma/
+data/raw/
+data/processed/
+data/logs/
+
+# Development scripts
+scripts/
+
+# Large git artifacts
+.git/
+.github/

@@ -234,14 +234,27 @@ async def get_status() -> Dict[str, Any]:
 @app.get("/api/sources")
 async def get_sources() -> Dict[str, Any]:
     """Configured data sources with rationale."""
-    from src.collectors.news_collector import NEWS_SOURCES
-    from src.collectors.job_collector import GREENHOUSE_AI_COMPANIES, LEVER_AI_COMPANIES
+    try:
+        from src.collectors.news_collector import NEWS_SOURCES
+        from src.collectors.job_collector import GREENHOUSE_AI_COMPANIES, LEVER_AI_COMPANIES
+        gh_companies = [c for _, c in GREENHOUSE_AI_COMPANIES]
+        lever_companies = [c for _, c in LEVER_AI_COMPANIES]
+    except Exception:
+        NEWS_SOURCES = [
+            {"name": "TechCrunch AI", "rationale": "Leading tech publication with dedicated AI section"},
+            {"name": "VentureBeat AI", "rationale": "AI-focused tech journalism with consistent timestamps"},
+            {"name": "MIT Technology Review", "rationale": "Research-backed AI coverage"},
+            {"name": "The Decoder", "rationale": "AI-only outlet with daily coverage"},
+            {"name": "MarkTechPost", "rationale": "AI research paper summaries and news"},
+        ]
+        gh_companies = ["OpenAI", "Anthropic", "Cohere", "Scale AI", "Mistral AI", "Hugging Face"]
+        lever_companies = ["Perplexity", "Character AI", "Synthesia", "Runway"]
 
     return {
         "news_sources": NEWS_SOURCES,
         "job_sources": {
-            "greenhouse": [c for _, c in GREENHOUSE_AI_COMPANIES],
-            "lever": [c for _, c in LEVER_AI_COMPANIES],
+            "greenhouse": gh_companies,
+            "lever": lever_companies,
             "other": ["Y Combinator Work at a Startup", "Ashby", "Hacker News Who is Hiring"],
         },
         "startup_sources": ["Hugging Face Organizations", "GitHub AI Organizations", "Y Combinator"],
