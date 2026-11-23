@@ -87,6 +87,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.middleware("http")
+async def handle_vercel_paths(request: Request, call_next):
+    """Normalize paths if forwarded by Vercel serverless rewrites."""
+    path = request.scope.get("path", "")
+    for prefix in ("/api/index.py", "/api/index"):
+        if path.startswith(prefix):
+            rem = path[len(prefix):]
+            request.scope["path"] = rem if rem else "/"
+            break
+    return await call_next(request)
+
 # Mount export downloads
 if settings.exports_dir.exists():
     app.mount("/downloads", StaticFiles(directory=str(settings.exports_dir)), name="downloads")
@@ -199,6 +210,17 @@ async def serve_sitemap():
 @app.exception_handler(404)
 async def custom_404_handler(request: Request, exc: Exception):
     """Custom enterprise 404 page."""
+    if request.url.path.startswith("/api/"):
+        from fastapi.responses import JSONResponse
+        return JSONResponse(
+            status_code=404,
+            content={
+                "error": "Not Found",
+                "request_path": request.url.path,
+                "raw_scope_path": request.scope.get("path"),
+                "headers": {k: v for k, v in request.headers.items() if "auth" not in k.lower() and "secret" not in k.lower()},
+            }
+        )
     file_404 = STATIC_DIR / "404.html"
     if file_404.exists():
         return FileResponse(file_404, status_code=404, media_type="text/html")
