@@ -90,19 +90,6 @@ app.add_middleware(
 @app.middleware("http")
 async def handle_vercel_paths(request: Request, call_next):
     """Normalize paths if forwarded by Vercel serverless rewrites."""
-    matched_path = request.headers.get("x-matched-path") or request.headers.get("x-invoke-path")
-    if matched_path:
-        matched_path = matched_path.split("?")[0]
-        if matched_path in ("/api/index.py", "/api/index"):
-            matched_path = "/"
-        request.scope["path"] = matched_path
-    else:
-        path = request.scope.get("path", "")
-        for prefix in ("/api/index.py", "/api/index"):
-            if path.startswith(prefix):
-                rem = path[len(prefix):]
-                request.scope["path"] = rem if rem else "/"
-                break
     return await call_next(request)
 
 # Mount export downloads
@@ -130,9 +117,18 @@ if STATIC_DIR.exists():
 # ─────────────────────────────────────────────────────────────────────────────
 # Primary Dashboard UI & Legal / SEO Endpoints
 # ─────────────────────────────────────────────────────────────────────────────
-@app.get("/", response_class=FileResponse)
-async def serve_landing():
+@app.get("/")
+async def serve_landing(request: Request):
     """Serves the public Editorial Landing Page."""
+    if request.query_params.get("debug") == "1":
+        import json
+        return Response(
+            content=json.dumps({
+                "scope_path": request.scope.get("path"),
+                "headers": dict(request.headers),
+            }, indent=2),
+            media_type="application/json"
+        )
     landing_file = STATIC_DIR / "landing.html"
     if landing_file.exists():
         return FileResponse(landing_file, media_type="text/html")
